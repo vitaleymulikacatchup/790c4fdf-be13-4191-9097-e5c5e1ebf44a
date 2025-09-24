@@ -15,35 +15,26 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "NebulaMem Futuristic Memecoin Landing Page for Crypto Fans",
-  description: "NebulaMem is a futuristic memecoin showcased on a sleek single-page site. Learn what it is, how to buy, tokenomics, and join the community with clear CTAs.",
-  keywords: ["nebulamem", "memecoin", "futuristic", "landing page", "how to buy", "tokenomics", "crypto", "cta"],
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "NebulaMem Futuristic Memecoin Landing Page for Crypto Fans",
-    description: "NebulaMem is a futuristic memecoin showcased on a sleek single-page site. Learn what it is, how to buy, tokenomics, and join the community with clear CTAs.",
+  title: "NebulaMem: Futuristic Memecoin Landing Page for Crypto Fans",
+  description: "NebulaMem's sleek single-page landing explains the concept, how to buy, and tokenomics with clear CTAs. Explore the futuristic vibe and join the community.",
+  keywords: ["nebulamem","memecoin","futuristic","landing page","how to buy","tokenomics","crypto","cta","nebula","community"],
+  alternates: { canonical: "/" },
+  openGraph: { 
+    title: "NebulaMem: Futuristic Memecoin Landing Page for Crypto Fans",
+    description: "NebulaMem's sleek single-page landing explains the concept, how to buy, and tokenomics with clear CTAs. Explore the futuristic vibe and join the community.",
     type: "website",
     url: "/",
     siteName: "NebulaMem",
-    images: [{
-      url: "/images/logo.svg",
-      width: 1200,
-      height: 630,
-      alt: "NebulaMem Futuristic Memecoin Landing Page for Crypto Fans"
-    }],
+    images: [{ url: "/images/logo.svg", width: 1200, height: 630, alt: "NebulaMem: Futuristic Memecoin Landing Page for Crypto Fans" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "NebulaMem Futuristic Memecoin Landing Page for Crypto Fans",
-    description: "NebulaMem is a futuristic memecoin showcased on a sleek single-page site. Learn what it is, how to buy, tokenomics, and join the community with clear CTAs.",
-    images: "/images/logo.svg"
+    title: "NebulaMem: Futuristic Memecoin Landing Page for Crypto Fans",
+    description: "NebulaMem's sleek single-page landing explains the concept, how to buy, and tokenomics with clear CTAs. Explore the futuristic vibe and join the community.",
+    images: ["/images/logo.svg"]
   },
   robots: { index: true, follow: true },
-  icons: [{
-    href: "/favicon.ico"
-  }],
+  icons: [{ icon: "/favicon.ico" }]
 };
 
 export default function RootLayout({
@@ -51,9 +42,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>{children}</body>
     </html>
   );
 }
