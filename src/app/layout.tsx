@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "NebulaMem's sleek single-page landing explains the concept, how to buy, and tokenomics with clear CTAs. Explore the futuristic vibe and join the community.",
   keywords: ["nebulamem","memecoin","futuristic","landing page","how to buy","tokenomics","crypto","cta","nebula","community"],
   alternates: { canonical: "/" },
-  openGraph: { 
+  openGraph: {
     title: "NebulaMem: Futuristic Memecoin Landing Page for Crypto Fans",
     description: "NebulaMem's sleek single-page landing explains the concept, how to buy, and tokenomics with clear CTAs. Explore the futuristic vibe and join the community.",
     type: "website",
